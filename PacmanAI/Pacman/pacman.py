@@ -11,7 +11,6 @@ import random
 import numpy as np
 import graph
 
-
 class ColorConfig(object):
     WALL = ('c3B', (100, 100, 220))
     DOT = ('c3B', (200, 200, 200))
@@ -920,7 +919,7 @@ class GraphDisplay(object):
 
 
 def main():
-    world = PacmanWorld(20, 'levels/pacman.txt')
+    world = PacmanWorld(20, '/Users/christopherluey/Desktop/pacmanAI-master/PacmanAI/levels/pacman.txt')
     display = PacmanDisplay(world)
     world.spawn_player(KeyboardAgent)
     world.spawn_ghost(RandomGhost)
